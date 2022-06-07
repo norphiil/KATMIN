@@ -5,9 +5,8 @@ module.exports = async () => {
   return {
     widgets: {
       main: require('./widgets/main'),
-      userData: require('./widgets/userData'),
-      counters: require('./widgets/counters'),
-      counter: require('./widgets/counter')
+      header: require('./widgets/header'),
+      footer: require('./widgets/footer')
     },
     listeners: {
       increment: require('./listeners/increment'),
