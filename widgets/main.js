@@ -1,4 +1,4 @@
-'use strict'
+"use strict";
 
 module.exports = (data, props) => {
   return {
@@ -6,33 +6,13 @@ module.exports = (data, props) => {
     direction: "vertical",
     children: [
       {
-        type: "image",
-        src: "logo-vertical.png"
-      },
-      {
-        type: "text",
-        value: "This is the Hello World base app using the data system."
+        type: "widget",
+        name: "header",
       },
       {
         type: "widget",
-        name: "userData",
-        query: {
-          "$find": {
-            "_datastore": "_users",
-            "_id": "@me"
-          }
-        }
+        name: "footer",
       },
-      {
-        type: "widget",
-        name: "counters",
-        query: {
-          "$find": {
-            "_datastore": "Counter"
-          }
-        }
-      }
-    ]
-  }
-}
-
+    ],
+  };
+};

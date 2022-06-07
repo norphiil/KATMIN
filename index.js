@@ -1,22 +1,21 @@
-'use strict'
+"use strict";
 // Widgets
 
 module.exports = async () => {
   return {
     widgets: {
-      main: require('./widgets/main'),
-      userData: require('./widgets/userData'),
-      counters: require('./widgets/counters'),
-      counter: require('./widgets/counter')
+      main: require("./widgets/main"),
+      header: require("./widgets/header"),
+      footer: require("./widgets/footer"),
     },
     listeners: {
-      increment: require('./listeners/increment'),
-      decrement: require('./listeners/decrement'),
+      increment: require("./listeners/increment"),
+      decrement: require("./listeners/decrement"),
       newCounter: require("./listeners/newCounter"),
       deleteCounter: require("./listeners/deleteCounter"),
-      onEnvStart: require('./listeners/onEnvStart'),
-      onUserFirstJoin: require('./listeners/onUserFirstJoin')
+      onEnvStart: require("./listeners/onEnvStart"),
+      onUserFirstJoin: require("./listeners/onUserFirstJoin"),
     },
-    rootWidget: 'main'
-  }
-}
+    rootWidget: "main",
+  };
+};
