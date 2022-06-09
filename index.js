@@ -7,6 +7,7 @@ module.exports = async () => {
       main: require("./widgets/main"),
       header: require("./widgets/header"),
       footer: require("./widgets/footer"),
+      body: require("./widgets/body"),
     },
     listeners: {
       increment: require("./listeners/increment"),

@@ -4,10 +4,11 @@ module.exports = (data, props) => {
   return {
     type: "container",
     decoration: {
-      color: 0x4287f5,
+      color: 0xffa83232,
     },
     child: {
       type: "flex",
+      fillParent: true,
       direction: "horizontal",
       children: [
         {
